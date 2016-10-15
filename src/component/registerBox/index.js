@@ -30,7 +30,7 @@ export class RegisterBox extends Component {
 
   }
   validate() {
-    this.state.email == this.state.emailRepeat ? this.props.register(this.state) :this.incorrectEmails();
+    this.state.email === this.state.emailRepeat ? this.props.register(this.state) : this.incorrectEmails();
   }
 
   handleSnackbarTimeout() {
