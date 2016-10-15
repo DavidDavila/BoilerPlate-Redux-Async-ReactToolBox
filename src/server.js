@@ -3,6 +3,8 @@ import React from 'react';
 import mongoose from 'mongoose';
 import methodOverride from 'method-override';
 import bodyParser from 'body-parser';
+import './models/login';
+import LoginCtrl from './controllers/login';
 import './models/client';
 import ClientCtrl from './controllers/client';
 import './models/contact';
@@ -79,8 +81,12 @@ rooter.route('/client/:id')
   .put(ClientCtrl.updateClient)
   .delete(ClientCtrl.deleteClient);
 
-rooter.route('/client/:id/validate')
-  .post(ClientCtrl.validateClient);
+rooter.route('/login/')
+  .post(LoginCtrl.validateUser);
+
+rooter.route('/register/')
+  .post(LoginCtrl.addUser);
+
 
 app.use('/api', rooter);
 

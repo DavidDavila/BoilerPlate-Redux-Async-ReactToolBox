@@ -22,7 +22,7 @@ export default class Footer extends Component {
   }
 
   render() {
-    const url = 'http://github.com/DavidDavila/boilerplate-redux';
+    const url = 'https://github.com/DavidDavila/BolerPlate-Redux-Async-ReactToolBox';
     return (
       <footer style={style.footer}>
         <ul>

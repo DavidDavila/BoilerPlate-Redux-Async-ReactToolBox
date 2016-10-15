@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styler from 'react-styling';
-import { Link, IndexLink } from 'react-router';
+import { IndexLink } from 'react-router';
 
 
 
@@ -42,9 +42,6 @@ export default class Menu extends Component {
         <ul style={style.menu} className="menu">
           <li style={style.menu.item}>
             <IndexLink to="/" style={style.menu.item.link} activeClassName="selected" className="menu-item">Home</IndexLink>
-          </li>
-          <li style={style.menu.item}>
-            <Link to="/contador" style={style.menu.item.link} activeClassName="selected" className="menu-item">Contador</Link>
           </li>
         </ul>
       </header>

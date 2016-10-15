@@ -1,2 +1,2 @@
 whit Mongo initialised
-npm start;
+npm start
