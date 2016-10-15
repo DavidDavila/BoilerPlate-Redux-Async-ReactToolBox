@@ -22,8 +22,11 @@ export class Login extends Component {
     this.state[component] = value;
     this.setState(this.state);
   }
+  goToLink(rute) {
+    this._reactInternalInstance._context.history.push('/' + rute);
+  }
   render() {
-    console.log(this.props);
+
     return (
       <div style={style.box}>
         <Input type='text' value={this.state.email} label='Email' name='email' onChange={this.handleChange.bind(this, 'email')} />
@@ -43,6 +46,7 @@ export class Login extends Component {
           icon='fingerprint'
           label='Registrarse'
           flat
+          onClick={ this.goToLink.bind(this, 'register') }
          />
       </div>
     );

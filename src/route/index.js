@@ -6,12 +6,12 @@ import Layout from 'layout';
 
 import Home from 'view/home';
 import NotFound from 'view/not-found';
-import Setting from 'view/setting';
+import Register from 'view/register';
 
 export default (
   <Route path="/" component={Layout}>
     <IndexRoute component={Home} />
-    <Route path="/settings" component={Setting} />
+    <Route path="/register" component={Register} />
     <Route path="*" component={NotFound} />
   </Route>
 );
