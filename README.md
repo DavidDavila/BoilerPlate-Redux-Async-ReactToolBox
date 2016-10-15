@@ -1,2 +1,2 @@
-whit Mongo initialised
+with Mongo initialised
 npm start
